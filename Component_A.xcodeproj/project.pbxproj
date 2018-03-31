@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1308514FAC3C3D43A1E4336A /* libPods-Component_A.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3BDDE6DE89F2B6271FF97E /* libPods-Component_A.a */; };
+		1D10D7E1206F12FB00D383A8 /* Target_ComponentA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D10D7E0206F12FB00D383A8 /* Target_ComponentA.m */; };
 		1D30EE13206C7F6A007A2719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D30EE12206C7F6A007A2719 /* AppDelegate.m */; };
 		1D30EE16206C7F6B007A2719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D30EE15206C7F6B007A2719 /* ViewController.m */; };
 		1D30EE19206C7F6C007A2719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D30EE17206C7F6C007A2719 /* Main.storyboard */; };
@@ -15,10 +16,11 @@
 		1D30EE1E206C7F6D007A2719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D30EE1C206C7F6D007A2719 /* LaunchScreen.storyboard */; };
 		1D30EE21206C7F6E007A2719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D30EE20206C7F6E007A2719 /* main.m */; };
 		1D30EE2A206DD30C007A2719 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D30EE28206DD30C007A2719 /* AViewController.m */; };
-		1D30EE59206DD754007A2719 /* Target_ComponentA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D30EE58206DD754007A2719 /* Target_ComponentA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D10D7DF206F12FB00D383A8 /* Target_ComponentA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ComponentA.h; sourceTree = "<group>"; };
+		1D10D7E0206F12FB00D383A8 /* Target_ComponentA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ComponentA.m; sourceTree = "<group>"; };
 		1D30EE0E206C7F69007A2719 /* Component_A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Component_A.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D30EE11206C7F6A007A2719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D30EE12206C7F6A007A2719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		1D30EE20206C7F6E007A2719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D30EE28206DD30C007A2719 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
 		1D30EE29206DD30C007A2719 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
-		1D30EE57206DD754007A2719 /* Target_ComponentA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ComponentA.h; sourceTree = "<group>"; };
-		1D30EE58206DD754007A2719 /* Target_ComponentA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ComponentA.m; sourceTree = "<group>"; };
 		577E56E70BDBE6CD92C27BE2 /* Pods-Component_A.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Component_A.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Component_A/Pods-Component_A.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3BDDE6DE89F2B6271FF97E /* libPods-Component_A.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Component_A.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E452F84B76DB634C1766043 /* Pods-Component_A.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Component_A.release.xcconfig"; path = "Pods/Target Support Files/Pods-Component_A/Pods-Component_A.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D10D7DE206F12D900D383A8 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				1D10D7DF206F12FB00D383A8 /* Target_ComponentA.h */,
+				1D10D7E0206F12FB00D383A8 /* Target_ComponentA.m */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
 		1D30EE05206C7F65007A2719 = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +80,6 @@
 		1D30EE10206C7F69007A2719 /* Component_A */ = {
 			isa = PBXGroup;
 			children = (
-				1D30EE56206DD732007A2719 /* Targets */,
 				1D30EE27206DD2CF007A2719 /* LittleComponent_A */,
 				1D30EE11206C7F6A007A2719 /* AppDelegate.h */,
 				1D30EE12206C7F6A007A2719 /* AppDelegate.m */,
@@ -89,19 +97,11 @@
 		1D30EE27206DD2CF007A2719 /* LittleComponent_A */ = {
 			isa = PBXGroup;
 			children = (
+				1D10D7DE206F12D900D383A8 /* Targets */,
 				1D30EE29206DD30C007A2719 /* AViewController.h */,
 				1D30EE28206DD30C007A2719 /* AViewController.m */,
 			);
 			path = LittleComponent_A;
-			sourceTree = "<group>";
-		};
-		1D30EE56206DD732007A2719 /* Targets */ = {
-			isa = PBXGroup;
-			children = (
-				1D30EE57206DD754007A2719 /* Target_ComponentA.h */,
-				1D30EE58206DD754007A2719 /* Target_ComponentA.m */,
-			);
-			path = Targets;
 			sourceTree = "<group>";
 		};
 		9AA96481F35EC9EB41824F03 /* Frameworks */ = {
@@ -246,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D30EE59206DD754007A2719 /* Target_ComponentA.m in Sources */,
+				1D10D7E1206F12FB00D383A8 /* Target_ComponentA.m in Sources */,
 				1D30EE2A206DD30C007A2719 /* AViewController.m in Sources */,
 				1D30EE16206C7F6B007A2719 /* ViewController.m in Sources */,
 				1D30EE21206C7F6E007A2719 /* main.m in Sources */,
